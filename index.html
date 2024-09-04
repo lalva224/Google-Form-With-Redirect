@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class = 'center' >
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfS9bQKo-2eWkqCy3bFtF-QAvmnxz5wQrUmvyRKRlj7zocBWA/viewform?embedded=true" width="1000" height="800" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>    <script>
+        let counter = 0;
+        //gets to 1 on inital load, and 2 after submit
+        const iframe= document.querySelector('iframe');
+        iframe.addEventListener('load',()=>{
+            
+            counter++;
+            if(counter==2){
+                window.location.href = 'https://superiorroofingandwindows.com/';
+            }
+
+            });
+        
+    </script>
+</body>
+</html>
